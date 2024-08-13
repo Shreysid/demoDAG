@@ -1,0 +1,77 @@
+/* components/TourModal.css */
+.tour-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .tour-modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  .tour-modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .navigation-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .tour-modal-buttons button,
+  .navigation-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .tour-modal-buttons button:first-child {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .navigation-buttons button {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .navigation-buttons button:hover {
+    background-color: #2980b9;
+  }
+  
+  .navigation-buttons button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+  }
+  
+  
+  .tour-button {
+    /* padding: 10px 20px; */
+    border: none;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    /* border-radius: 5px; */
+    /* margin-top: 20px; */
+  }
+  
+  .tour-button:hover {
+    background-color: #2980b9;
+  }
+  
+  
