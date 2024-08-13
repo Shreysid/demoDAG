@@ -11,7 +11,9 @@ logging.basicConfig(level=logging.INFO)
 
 origins = [
     "http://localhost",
-    "http://localhost:3000",  
+    "http://localhost:3000",
+    "https://demo-dag-backend.vercel.app",
+    "https://demo-dag.vercel.app"
 ]
 
 app.add_middleware(
