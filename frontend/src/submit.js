@@ -12,11 +12,14 @@ export const SubmitButton = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [result, setResult] = useState(null);
 
+  const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+
   const handleSubmit = async () => {
     try {
       console.log("Submitting pipeline data:", { nodes, edges });
 
-      const response = await fetch('http://127.0.0.1:8000/pipelines/parse', {
+      
+      const response = await fetch(`${apiUrl}/pipelines/parse`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
