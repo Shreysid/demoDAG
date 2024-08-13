@@ -37,7 +37,7 @@ const TourManager = () => {
       },
       {
           title: 'Submit',
-          content: 'Use the Submit button to get the details of number of nodes, edges and weather a DAG has been formed.',
+          content: 'Use the Submit button to get the details of number of nodes, edges and whether a DAG has been formed.',
         },
         {
           title: 'Clear',
