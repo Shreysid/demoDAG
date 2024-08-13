@@ -12,6 +12,7 @@ export const SubmitButton = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [result, setResult] = useState(null);
 
+  const backendURL = process.env.REACT_APP_BACKEND_URL;
   const apiUrl = backendURL || "http://localhost:8000";
 
   const handleSubmit = async () => {
