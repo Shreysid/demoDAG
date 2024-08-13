@@ -14,7 +14,7 @@ export const SubmitButton = () => {
 
   const backendURL = process.env.REACT_APP_BACKEND_URL;
   // || "http://localhost:8000"
-  const apiUrl = backendURL ;
+  const apiUrl = "https://demo-dag-backend.vercel.app"
 
   const handleSubmit = async () => {
     try {
